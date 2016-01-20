@@ -1,10 +1,13 @@
 package com.bash.serg.outputs;
 
+import org.springframework.stereotype.Component;
+
 import javax.swing.*;
 
 /**
  * Created by serega on 20.01.2016.
  */
+@Component
 public class WindowTextOutput implements TextOutput {
     @Override
     public void showText(String outputText) {
