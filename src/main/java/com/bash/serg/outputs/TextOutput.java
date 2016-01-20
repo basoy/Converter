@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 /**
  * Created by Serg Bash on 18.01.2016.
  */
-@Component
 public interface TextOutput {
     void showText(String outputText);
 }

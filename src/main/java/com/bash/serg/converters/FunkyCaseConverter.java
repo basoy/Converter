@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by Serg Bash on 18.01.2016.
  */
-@Component
+@Component("funky")
 public class FunkyCaseConverter implements Converter {
 
     @Override

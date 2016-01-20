@@ -7,7 +7,7 @@ import javax.swing.*;
 /**
  * Created by serega on 20.01.2016.
  */
-@Component
+@Component("windowOut")
 public class WindowTextOutput implements TextOutput {
     @Override
     public void showText(String outputText) {

@@ -9,13 +9,11 @@ import javax.inject.Inject;
 /**
  * Created by Serg Bash on 18.01.2016.
  */
-@Component
+@Component("consoleOut")
 public class  ConsoleTextOutput implements TextOutput {
 
     @Override
     public void showText(String outputText) {
         System.out.println(outputText);
     }
-
-
 }

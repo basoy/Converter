@@ -9,12 +9,19 @@ import java.io.InputStreamReader;
 /**
  * Created by Serg Bash on 18.01.2016.
  */
-@Component
+@Component("consoleIn")
 public class ConsoleTextProvider implements TextProvider {
 
     @Override
-    public String putText() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        return br.readLine();
+    public String putText(){
+        BufferedReader br;
+        try {
+            br = new BufferedReader(new InputStreamReader(System.in));
+            return br.readLine();
+        }
+        catch(IOException e){
+          e.printStackTrace();
+        }
+         return  null;
     }
 }

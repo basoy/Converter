@@ -9,14 +9,14 @@ import javax.inject.Inject;
 /**
  * Created by serega on 20.01.2016.
  */
-@Component
+@Component("consoleAndWindow")
 public class ConsoleAndWindowTextOutput implements TextOutput {
 
-    @Inject
+    @Autowired
     private TextOutput consoleTextOutput;
-    @Inject
+    @Autowired
     private TextOutput windowTextOutput;
-    @Inject
+    @Autowired
     private Converter funkyCaseConverter;
 
     @Override
