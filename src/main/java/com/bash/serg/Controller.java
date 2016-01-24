@@ -11,7 +11,8 @@ import javax.inject.Named;
  * Created by Serg Bash on 20.01.2016.
  */
 @Component
-public class Initializer {
+public class Controller {
+
     @Inject
     @Named("consoleIn")
     private TextProvider textProvider;
@@ -23,21 +24,6 @@ public class Initializer {
     private TextOutput textOutput;
 
     void initialize(){
-        String inputString = getTextProvider().putText();
-        String convertedString = getConverter().convert(inputString);
-        getTextOutput().showText(convertedString);
+        textOutput.showText(converter.convert(textProvider.putText()));
     }
-
-    public TextProvider getTextProvider() {
-        return textProvider;
-    }
-
-    public Converter getConverter() {
-        return converter;
-    }
-
-    public TextOutput getTextOutput() {
-        return textOutput;
-    }
-
 }

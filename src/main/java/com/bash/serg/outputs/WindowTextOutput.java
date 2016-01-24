@@ -11,7 +11,7 @@ import javax.swing.*;
 public class WindowTextOutput implements TextOutput {
     @Override
     public void showText(String outputText) {
-        JFrame frame = new JFrame("Convertor v1.0");
+        JFrame frame = new JFrame("Converter v1.0");
         JOptionPane.showMessageDialog(frame, outputText);
         System.exit(0);
     }
